@@ -1,0 +1,140 @@
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nav-top {
+  width: 100%;
+  height: 60px;
+}
+.nav-side {
+  width: 65px;
+  height: 100%;
+  background: #666;
+  display:inline-flex;
+}
+.nav-div {
+  margin: 0; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  width: 12%; 
+  text-align: end;
+} 
+.nav-first-div {
+  width: 59px;
+  height: 100%;
+  background: #9004d6;
+  color: white;
+  text-align: center;
+} 
+.display-block{
+  display: block;
+}
+.float-right{
+  float: right; 
+}
+
+.margin-10{
+  margin:10px;
+}
+
+.nav-label{
+  font-size: 12px;
+  color: gray;
+}
+.nav-text{
+  font-size: 16px;
+  color: #333;
+}
+.nav-first-text{
+  font-size: 45px;
+  font-weight: bold;
+}
+.App{
+  height:100%;
+  width: 100%;
+}
+.display-inline-flex{
+  display: inline-flex;
+}
+.dashboard-div-main{
+  margin-left: 50px;
+  width: 100%;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 18.75rem;;
+  border: .25px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 20px 10px 0px;
+  box-shadow: 0 5px 10px 2px rgba(182, 182, 182, 1);
+}
+.display-flex{
+  display: flex;
+}
+.cards-img{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+.cards-text-bold{
+  font-weight: bold;
+}
+.margin-small{
+  margin-bottom: 0.5rem;
+}
+ul{
+  padding: 0rem;
+  border: .25px solid #d3d3d3;
+  border-top: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 2px rgba(182, 182, 182, 1);
+  width: 25rem;
+  height: 50%;
+  overflow-y: scroll;
+}
+li{
+  display: block;
+  padding: .75rem;
+}
+.list-div{
+  display: inline-flex;
+  align-items: center;
+}
+.list-first-div{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+ul>h4{
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 1px solid #d3d3d3;
+}
+img{
+  border-radius: 25px;
+}
+.header{
+  padding: 1rem;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 93%;
+  font-size: 16px;
+  font-weight: bold;
+}
+select{
+  border:none;
+}
