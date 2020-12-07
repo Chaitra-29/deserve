@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import Card from './Card';
 import List from './List';
 function Dashboard() {

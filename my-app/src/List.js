@@ -1,5 +1,5 @@
-import './App.css';
-import avatar from './avatar.png';
+import './css/App.css';
+import avatar from './resource/avatar.png';
 import React,{useState,useEffect} from 'react';
 
 function List() {
@@ -42,7 +42,7 @@ function List() {
         <li key={index}>
         <div className="list-first-div">
           <div className="list-div">
-            <img className="cards-img" src={avatar} width="50" height="50"/>
+            <img className="cards-img" alt={avatar} src={avatar} width="50" height="50"/>
             <label className="display-block nav-text cards-text-bold">{student.name}</label>
           </div>
           <label className="display-block nav-text cards-text-bold">{student.marks}</label>

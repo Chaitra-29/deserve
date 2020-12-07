@@ -1,6 +1,6 @@
-import './App.css';
-import avatar from './avatar.png';
-import line from './line.png';
+import './css/App.css';
+import avatar from './resource/avatar.png';
+import line from './resource/line.png';
 import React,{useState,useEffect} from 'react';
 function Card() {
   const [overview, setOverview] = useState([]);
@@ -20,8 +20,8 @@ function Card() {
     return overview.map((data,index)=>{
       return (
         <div className="cards" key={index}>
-        <img className="cards-img" src={image(data.type)} width="50" height="50"/>
-        <div className="">
+        <img className="cards-img" alt={image(data.type)} src={image(data.type)} width="50" height="50"/>
+        <div>
           <label className="nav-text cards-text-bold">{data.line1}</label><label className="nav-label margin-10">{data.line2}</label>
           <label className="display-block nav-label">{data.title}</label>
         </div>
