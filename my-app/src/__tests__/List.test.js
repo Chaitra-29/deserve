@@ -1,6 +1,6 @@
 //import { render,screen } from '@testing-library/react';
 import { render , unmountComponentAtNode } from "react-dom";
-import Card from '../Card';
+import List from '../List';
 import { act } from "react-dom/test-utils";
    let container = null;
     beforeEach(() => {
@@ -18,27 +18,26 @@ import { act } from "react-dom/test-utils";
     
   });
   test('fetchAPI', async () => {
-    const response = [{
-      "id": 1,
-      "title": "Students",
-      "type": "profiles",
-      "line1": 62
-    },
-    {
-      "id": 2,
-      "title": "Average Markes",
-      "type": "calculation",
-      "line1": 6.8
-    }];
+    const response = [
+      {
+        "id": 1,
+        "name": "Annete Watson",
+        "marks": 9.3
+      },
+      {
+        "id": 2,
+        "name": "Calvin Steward",
+        "marks": 8.9
+      }];
     jest.spyOn(global, 'fetch').mockImplementation(() => []);
     const mockJsonPromise = Promise.resolve(response);  
     const mockFetchPromise = Promise.resolve({
       json: () => mockJsonPromise,
     });
     jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise);
-    await act( async () => {render(<Card />, container)});
+    await act( async () => {render(<List />, container)});
     
-    expect(fetch).toHaveBeenCalledTimes(2);
+    expect(fetch).toHaveBeenCalledTimes(1);
    
   });
 
