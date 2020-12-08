@@ -52,6 +52,7 @@ function List() {
     })
   }
   return (
+    <div>
       <ul>
         <div className="header">
           <label>Students by average marks</label>
@@ -68,6 +69,23 @@ function List() {
         </div>
         {renderCells()}
       </ul>
+      <ul>
+      <div className="header">
+        <label>Students by average marks</label>
+        <select className="nav-label" onChange={(e)=>{
+          if (e.target.value === "Descending"){
+            sort(true);
+          }else{
+            sort(false);
+          }
+        }}>
+          <option value="Descending">Descending</option>
+          <option value="Ascending">Ascending</option>
+        </select>
+      </div>
+      {renderCells()}
+    </ul>
+    </div>
   );
 }
 
